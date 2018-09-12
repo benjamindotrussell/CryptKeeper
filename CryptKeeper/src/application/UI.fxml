@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?scenebuilder-background-color 0x0083ccff?>
+
+<AnchorPane prefHeight="180.0" prefWidth="369.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.UIController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane id="Content" layoutX="0.0" layoutY="0.0" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="369.0">
+      <children>
+        <TextField fx:id="myFile" focusTraversable="false" layoutX="13.0" layoutY="62.0" mouseTransparent="true" pickOnBounds="true" prefWidth="200.0" promptText="File Chooser" />
+        <Button fx:id="browseBtn" layoutX="210.0" layoutY="62.0" mnemonicParsing="false" onMouseClicked="#browseClick" text="Browse" />
+        <Button fx:id="encryptBtn" layoutX="30.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#encryptClick" text="Encrypt" />
+        <Label layoutX="13.0" layoutY="29.0" prefHeight="21.0001220703125" text="Enter a  file" textFill="BLACK" />
+        <Button fx:id="decryptBtn" layoutX="178.0" layoutY="102.0" mnemonicParsing="false" onMouseClicked="#decryptClick" text="Decrypt" />
+        <TextField fx:id="cryptKey" focusTraversable="true" layoutX="87.0" layoutY="136.0" prefWidth="122.0" visible="false" />
+        <Label fx:id="keyLbl" layoutX="26.0" layoutY="136.0" prefHeight="21.0001220703125" text="Crypt Key" textFill="BLACK" visible="false" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
